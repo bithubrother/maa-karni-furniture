@@ -3,108 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maa Karni Furniture</title>
+  <title>Karni Furniture</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Maa Karni Furniture Logo">
-      <h1>Welcome to Maa Karni Furniture</h1>
+  <header class="header">
+    <div class="wrap">
+      <a href="#" class="brand">
+        <img src="logo.png" alt="Karni Furniture Logo">
+        <div class="brand-text">
+          <h1>Karni Furniture</h1>
+          <p class="slogan">Quality • Comfort • Elegance</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#gallery">Gallery</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h2>Transforming Spaces with Timeless Furniture</h2>
-      <p>Premium quality, custom-made furniture designed to fit your lifestyle.</p>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="section" id="gallery">
-    <div class="wrap">
-      <h2>Our Work</h2>
-      <p class="lead">Handcrafted furniture, designed for elegance & durability.</p>
-      
-      <div class="gallery-grid">
-        <figure class="card">
-          <img src="images/almirah1.jpg" alt="Sliding Door Almirah">
-          <figcaption>Sliding Door Almirah <br>Modern & practical solution</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="images/almirah2.jpg" alt="Trending Design Wardrobe">
-          <figcaption>Trending Design <br>Stylish choice for modern homes</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="images/bed1.jpg" alt="Luxury Bedroom">
-          <figcaption>Luxury Bedroom <br>Modern touch with timeless design</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="images/kitchen1.jpg" alt="Modular Kitchen">
-          <figcaption>Modular Kitchen <br>Custom built for your lifestyle</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="images/sofa1.jpg" alt="Premium Sofa Set">
-          <figcaption>Premium Sofa Set <br>Comfort & style combined</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="images/table1.jpg" alt="Wooden Dining Table">
-          <figcaption>Wooden Dining Table <br>Crafted with fine detail</figcaption>
-        </figure>
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <span class="badge">Welcome to Karni Furniture</span>
+        <h2>Crafting Premium Wooden Furniture</h2>
+        <p class="lead">From stylish sofas to elegant beds and wardrobes, 
+        we design furniture that blends tradition with modern living.</p>
+        <div class="cta">
+          <a href="#gallery" class="btn">Explore Collection</a>
+          <a href="#contact" class="btn outline">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="hero-furniture.jpg" alt="Karni Furniture Showcase">
       </div>
     </div>
   </section>
 
-  <!-- About Us -->
-  <section class="section soft" id="about">
+  <!-- Gallery Section -->
+  <section class="section soft" id="gallery">
+    <div class="wrap">
+      <h2>Our Furniture Collection</h2>
+      <div class="gallery-grid">
+
+        <figure class="card">
+          <img src="sofa1.jpg" alt="Sofa Design 1">
+          <figcaption>Premium Sofa • Elegant comfort with timeless style</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="sofa2.jpg" alt="Sofa Design 2">
+          <figcaption>Family Sofa • Cozy, durable & perfect for gatherings</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="bed1.jpg" alt="Bed Design 1">
+          <figcaption>King Size Bed • Luxury finish with modern touch</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="almirah1.jpg" alt="Wardrobe Design 1">
+          <figcaption>Wardrobe • Spacious, smart & functional storage</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="sliding-bedroom-almirah.jpg" alt="Sliding Almirah">
+          <figcaption>Sliding Door Almirah • Sleek & space-saving design</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="Trending-small-almirah-designs-1.png" alt="Trending Almirah">
+          <figcaption>Trending Almirah • Compact yet stylish furniture piece</figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="Wall-almirah-design-1.jpg" alt="Wall Almirah">
+          <figcaption>Wall Almirah • Built-in elegance for modern interiors</figcaption>
+        </figure>
+
+        <!-- Baaki images yahi format me add karne hain -->
+        
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="section" id="about">
     <div class="wrap about-grid">
       <div class="about-text">
         <h2>About Us</h2>
-        <p><b>Maa Karni Furniture</b> — built on trust and craftsmanship. With over a decade of experience, 
-        we serve homes and hotels across India, offering custom sizes, finishes and on-site installation.</p>
-
+        <p>At <strong>Karni Furniture</strong>, we believe that furniture is not just about 
+        utility, but about bringing beauty, elegance, and comfort into your home. 
+        With years of expertise in premium wood crafting, we deliver designs 
+        that stand the test of time.</p>
         <ul>
-          <li>✔️ 10+ years experience in furniture manufacturing & hotel projects</li>
-          <li>✔️ Custom builds, upholstery, modular wardrobes and turnkey projects</li>
-          <li>✔️ Special bulk pricing & dedicated project management</li>
-          <li>📍 Service Area: Sinthal, Bikaner • Pan-India</li>
+          <li>✔ Premium Quality Woodwork</li>
+          <li>✔ Custom Designs as per your need</li>
+          <li>✔ Durable & Long-lasting Finishing</li>
+          <li>✔ Elegant, Trend-setting Designs</li>
         </ul>
-
-        <p style="margin-top:10px;">Follow us: 
-          <a href="https://instagram.com/" target="_blank">Instagram</a> · 
-          <a href="https://facebook.com/" target="_blank">Facebook</a>
-        </p>
       </div>
-
       <div class="about-img">
-        <img src="images/about-bed.jpg" alt="About Maa Karni Furniture" style="width:100%;border-radius:12px;">
+        <img src="about-furniture.jpg" alt="About Karni Furniture" style="width:100%;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,0.5);">
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="wrap">
-      <h2>Contact Us</h2>
-      <p>📞 +91 98765 43210</p>
-      <p>📍 Sinthal, Bikaner, Rajasthan</p>
-      <p>✉️ info@maakarni.com</p>
+  <!-- Contact Section -->
+  <section class="section soft" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Contact Us</h2>
+        <ul class="contact-list">
+          <li><strong>Phone/WhatsApp:</strong> <a href="tel:8238736573">82387 36573</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@karnifurniture.com">info@karnifurniture.com</a></li>
+          <li><strong>Address:</strong> Sinthal, Bikaner, Rajasthan, India</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow Us</h2>
+        <ul class="contact-list">
+          <li><a href="https://www.facebook.com/harisingh.bithu" target="_blank">🌐 Facebook</a></li>
+          <li><a href="https://www.instagram.com/harisinthal?igsh=OGxvOXpiNmMxdG45" target="_blank">📷 Instagram</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© <span id="year"></span> Maa Karni Furniture. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Karni Furniture. All Rights Reserved.</p>
+      <p class="muted">Crafted with ❤️ in Bikaner</p>
+    </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
