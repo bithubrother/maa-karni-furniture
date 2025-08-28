@@ -3,113 +3,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Maa Karni Furniture — Trusted Furniture Specialists</title>
+  <title>Maa Karni Furniture — Bithubrother</title>
   <meta name="description" content="Maa Karni Furniture — 10+ years experience. Complete furniture solutions for homes & hotels. Pan-India delivery & installation.">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="header">
+    <div class="wrap">
       <a class="brand" href="#">
-        <!-- agar logo nahi hai to ye text show karega -->
-        <img src="logo/logo.png" alt="Maa Karni Furniture logo" class="logo" onerror="this.style.display='none'">
-        <span class="brand-text">Maa Karni Furniture</span>
+        <img src="logo/logo.png" alt="Maa Karni Furniture" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <h1>Maa Karni Furniture</h1>
+          <p class="slogan">Crafting Comfort • Creating Style — 10+ Years</p>
+        </div>
       </a>
       <nav class="nav">
-        <a href="#gallery">Gallery</a>
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
+        <a href="#collection">Collection</a>
         <a href="#about">About</a>
         <a href="#contact" class="btn">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1>Crafting Comfort, Creating Style — 10+ Years of Expertise</h1>
-      <p>Complete furniture solutions for Homes & Hotels. Design • Manufacture • Deliver • Install — across India.</p>
-      <div class="cta">
-        <a class="btn" href="tel:+918238736573">Call Now: 82387 36573</a>
-        <a class="btn outline" href="https://wa.me/918238736573" target="_blank" rel="noopener">WhatsApp</a>
+  <section id="home" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h2>Beautiful. Durable. Affordable.</h2>
+        <p class="lead">Complete furniture solutions for Homes & Hotels — Design · Manufacture · Deliver · Install — Pan-India.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+918238736573">Call Now: 82387 36573</a>
+          <a class="btn outline" href="https://wa.me/918238736573" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="note">Special rates for bulk & hotel orders • Nationwide delivery & installation</p>
       </div>
-      <p class="hero-note">Special rates for bulk & hotel orders • Nationwide delivery & installation</p>
+      <div class="hero-right">
+        <img src="images/sofa1.jpg" alt="Featured Sofa">
+      </div>
     </div>
   </section>
 
   <section id="services" class="section">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="grid services-grid">
-        <div class="service"><h3>Sofas & Upholstery</h3><p>Custom sofas, re-upholstery, modern & traditional finishes.</p></div>
-        <div class="service"><h3>Beds & Wardrobes</h3><p>King/Queen/Single size beds and modular wardrobes.</p></div>
-        <div class="service"><h3>Dining & Tables</h3><p>Dining sets, center tables, coffee tables — durable quality.</p></div>
-        <div class="service"><h3>Hotel Furnishing</h3><p>Turnkey solutions for hotels — on-time delivery & installation.</p></div>
-        <div class="service"><h3>Office & Custom</h3><p>Office desks, reception counters, storage solutions & bespoke builds.</p></div>
+    <div class="wrap">
+      <h2>Why Choose Maa Karni</h2>
+      <div class="features">
+        <div class="feat">
+          <h3>10+ Years Experience</h3>
+          <p>Experienced craftsmen and designers delivering quality work for homes and hotels.</p>
+        </div>
+        <div class="feat">
+          <h3>Pan-India Service</h3>
+          <p>Pickup, delivery and installation available across India — timely and secure.</p>
+        </div>
+        <div class="feat">
+          <h3>Bulk & Hotel Projects</h3>
+          <p>Special pricing, project planning and on-site installation for hotels & builders.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="gallery" class="section soft">
-    <div class="container">
-      <h2>Featured Gallery</h2>
-      <div class="grid gallery-grid">
-        <!-- Upload images into /images and rename accordingly -->
-        <figure class="card"><img loading="lazy" src="images/sofa1.jpg" alt="Sofa"><figcaption>Modern Sofa</figcaption></figure>
-        <figure class="card"><img loading="lazy" src="images/bed1.jpg" alt="Bed"><figcaption>King Bed</figcaption></figure>
-        <figure class="card"><img loading="lazy" src="images/table1.jpg" alt="Dining Table"><figcaption>Dining Set</figcaption></figure>
-        <figure class="card"><img loading="lazy" src="images/wardrobe1.jpg" alt="Wardrobe"><figcaption>Modular Wardrobe</figcaption></figure>
-        <figure class="card"><img loading="lazy" src="images/chair1.jpg" alt="Chair"><figcaption>Accent Chair</figcaption></figure>
-        <figure class="card"><img loading="lazy" src="images/tvunit1.jpg" alt="TV Unit"><figcaption>TV Unit</figcaption></figure>
+  <section id="collection" class="section soft">
+    <div class="wrap">
+      <h2>Our Collection</h2>
+      <p class="sub">A curated selection — sofas, beds, wardrobes, dining and more. (Click to view)</p>
+      <div class="gallery-grid">
+        <!-- Update these filenames if your image names differ -->
+        <figure class="card"><img src="images/sofa1.jpg" alt="Classic Sofa"><figcaption>Classic Sofa Set</figcaption></figure>
+        <figure class="card"><img src="images/sofa2.jpg" alt="Modern Sofa"><figcaption>Modern Sofa Design</figcaption></figure>
+        <figure class="card"><img src="images/Sofa3.jpg" alt="Luxury Sofa"><figcaption>Luxury Sofa Style</figcaption></figure>
+
+        <figure class="card"><img src="images/bed1.jpg" alt="Wooden Bed"><figcaption>Elegant Wooden Bed</figcaption></figure>
+        <figure class="card"><img src="images/bed2.jpg" alt="Double Bed"><figcaption>Premium Double Bed</figcaption></figure>
+        <figure class="card"><img src="images/bed3.jpg" alt="Designer Bed"><figcaption>Designer Bedroom Bed</figcaption></figure>
+
+        <figure class="card"><img src="images/almirah1.jpg" alt="Almirah"><figcaption>Spacious Almirah</figcaption></figure>
+        <figure class="card"><img src="images/almirah2.jpg" alt="Almirah"><figcaption>Classic Almirah Design</figcaption></figure>
+        <figure class="card"><img src="images/almirah3.jpg" alt="Almirah"><figcaption>Modern Almirah</figcaption></figure>
+
+        <figure class="card"><img src="images/Wall-almirah-design-1.jpg" alt="Wall Almirah"><figcaption>Wall Fitted Almirah</figcaption></figure>
+        <figure class="card"><img src="images/sliding-bedroom-almirah.jpg" alt="Sliding Almirah"><figcaption>Sliding Door Almirah</figcaption></figure>
+        <figure class="card"><img src="images/Trending-small-almirah-designs-1.png" alt="Trending Almirah"><figcaption>Trending Design</figcaption></figure>
+
+        <figure class="card"><img src="images/Trending-small-almirah-designs-7.png" alt="Compact Almirah"><figcaption>Compact Almirah</figcaption></figure>
+        <figure class="card"><img src="images/product-jpeg-500x500.jpg" alt="Product"><figcaption>Sample Product</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <div class="container about">
-      <div>
-        <h2>About Maa Karni Furniture</h2>
-        <p><strong>10+ सालों</strong> का अनुभव — हम घरों और होटलों के लिए पूर्ण फर्नीचर सॉल्यूशंस देते हैं। डिजाइन से लेकर इंस्टॉलेशन तक — हर स्टेप पर क्वालिटी और समयपालन हमारी प्राथमिकता है.</p>
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p><strong>Maa Karni Furniture</strong> — built on trust and craftsmanship. With over a decade of experience, we serve homes and hotels across India, offering custom sizes, finishes and on-site installation.</p>
         <ul>
-          <li>Nationwide delivery & installation — पूरे भारत में सेवा।</li>
-          <li>Special bulk pricing & project management for hotels and builders.</li>
-          <li>Custom sizes, finishes and fabric options available.</li>
+          <li>10+ years experience in furniture manufacturing & hotel projects</li>
+          <li>Custom builds, upholstery, modular wardrobes and turnkey projects</li>
+          <li>Special bulk pricing & dedicated project management</li>
         </ul>
-        <p class="lead">हम जहाँ भी काम लेते हैं — भरोसे के साथ काम पूरा करते हैं।</p>
+        <p class="lead">Service Area: Sinthal, Bikaner • Pan-India</p>
+        <p>Follow us: <a href="https://www.instagram.com/harisinthal?igsh=OGxvOXpiNmMxdG45" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/harisingh.bithu" target="_blank" rel="noopener">Facebook</a></p>
       </div>
-      <div class="about-right">
-        <h3>Team & Experience</h3>
-        <p>Experienced craftsmen and designers with 10+ years in furniture manufacturing and hotel projects. हमारी टीम हर प्रोजेक्ट को सफाई और प्रोफेशनल तरीके से पूरा करती है।</p>
-        <p><strong>Service Area:</strong> Sinthal, Bikaner • Pan-India</p>
-        <p><strong>Follow:</strong>
-          <a href="https://www.instagram.com/harisinthal?igsh=OGxvOXpiNmMxdG45" target="_blank" rel="noopener">Instagram</a> ·
-          <a href="https://www.facebook.com/harisingh.bithu" target="_blank" rel="noopener">Facebook</a>
-        </p>
+      <div class="about-image">
+        <img src="images/bed1.jpg" alt="Workshop / Team">
       </div>
     </div>
   </section>
 
   <section id="contact" class="section soft">
-    <div class="container contact">
-      <h2>Contact & Enquiries</h2>
-      <ul>
-        <li><strong>Phone / WhatsApp:</strong> <a href="tel:+918238736573">82387 36573</a></li>
-        <li><strong>Address:</strong> Sinthal, Bikaner, Rajasthan, India</li>
-        <li><strong>Social:</strong> Instagram & Facebook (links above)</li>
-      </ul>
-      <div class="contact-actions">
-        <a class="btn" href="tel:+918238736573">Call Now</a>
-        <a class="btn outline" href="https://wa.me/918238736573" target="_blank" rel="noopener">Message on WhatsApp</a>
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Contact & Enquiries</h2>
+        <p>For quotes, bulk orders or hotel projects — contact us directly.</p>
+        <ul class="contact-list">
+          <li><strong>Phone / WhatsApp:</strong> <a href="tel:+918238736573">82387 36573</a></li>
+          <li><strong>Address:</strong> Sinthal, Bikaner, Rajasthan, India</li>
+          <li><strong>Work:</strong> Homes · Hotels · Offices · Custom Projects</li>
+        </ul>
+        <div class="contact-actions">
+          <a class="btn" href="tel:+918238736573">Call Now</a>
+          <a class="btn outline" href="https://wa.me/918238736573" target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
+        <p class="small">Mention "Bulk/Hotel" in message for a special quote.</p>
       </div>
-      <p class="small">For large orders or hotel projects, mention “Bulk/Hotel” in your message for a special quote.</p>
+      <div>
+        <h3>Quick Inquiry</h3>
+        <p class="small">Copy & send this to WhatsApp for fast response:</p>
+        <pre class="wa-text">Hello Maa Karni Furniture, I need a quote for [item] for [city]. Contact: 82387 36573</pre>
+      </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap footer-inner">
       <p>© <span id="year"></span> Maa Karni Furniture · Built by Bithubrother</p>
+      <p class="muted">Best Furniture Deals Across India • Trusted for 10+ Years</p>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
