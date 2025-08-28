@@ -3,146 +3,235 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karni Furniture</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Maa Karni Furniture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 12px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900">
 
   <!-- Header -->
-  <header class="header">
-    <div class="wrap">
-      <a href="#" class="brand">
-        <img src="logo.png" alt="Karni Furniture Logo">
-        <div class="brand-text">
-          <h1>Karni Furniture</h1>
-          <p class="slogan">Quality • Comfort • Elegance</p>
-        </div>
-      </a>
-      <nav class="nav">
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn">Contact</a>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo/logo.png" alt="Maa Karni Furniture" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold">Maa Karni Furniture</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#gallery" class="hover:text-blue-600">Gallery</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-left">
-        <span class="badge">Welcome to Karni Furniture</span>
-        <h2>Crafting Premium Wooden Furniture</h2>
-        <p class="lead">From stylish sofas to elegant beds and wardrobes, 
-        we design furniture that blends tradition with modern living.</p>
-        <div class="cta">
-          <a href="#gallery" class="btn">Explore Collection</a>
-          <a href="#contact" class="btn outline">Contact Us</a>
+  <section class="text-center py-16 bg-gradient-to-r from-blue-50 to-blue-100">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Maa Karni Furniture</h2>
+    <p class="text-lg max-w-2xl mx-auto">
+      Premium quality wooden furniture crafted with love & precision.  
+      We believe in designs that combine durability, elegance, and modern lifestyle.  
+      Explore our wide range of Sofas, Beds, Almirahs and more.
+    </p>
+  </section>
+  <!-- Gallery Section -->
+  <section id="gallery" class="max-w-7xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Premium Collection</h2>
+    <div class="gallery-grid">
+
+      <!-- Sofas -->
+      <div class="gallery-item">
+        <img src="sofa1.jpg" alt="Sofa Design 1">
+        <p class="mt-2 font-semibold">Modern Comfort Sofa</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sofa2.jpg" alt="Sofa Design 2">
+        <p class="mt-2 font-semibold">Luxury Wooden Sofa</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Sofa3.jpg" alt="Sofa Design 3">
+        <p class="mt-2 font-semibold">Premium Style Sofa</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="2018modern-Style-of-Sofa-for-Home-Furniture-O.jpg" alt="Modern Sofa">
+        <p class="mt-2 font-semibold">Classic Modern Sofa</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="5bc85b1cN47f192f4-350x350.jpg" alt="Stylish Sofa">
+        <p class="mt-2 font-semibold">Compact Designer Sofa</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="71w6+Hl7lKL._UF894,1000_QL80_.jpg" alt="Elegant Sofa">
+        <p class="mt-2 font-semibold">Elegant Living Room Sofa</p>
+      </div>
+
+      <!-- Beds -->
+      <div class="gallery-item">
+        <img src="bed1.jpg" alt="Bed Design 1">
+        <p class="mt-2 font-semibold">Classic Wooden Bed</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="bed2.jpg" alt="Bed Design 2">
+        <p class="mt-2 font-semibold">Premium Bedroom Bed</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="bed3.jpg" alt="Bed Design 3">
+        <p class="mt-2 font-semibold">Luxury Style Bed</p>
+      </div>
+
+      <!-- Almirahs -->
+      <div class="gallery-item">
+        <img src="almirah1.jpg" alt="Almirah Design 1">
+        <p class="mt-2 font-semibold">Spacious Wooden Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="almirah2.jpg" alt="Almirah Design 2">
+        <p class="mt-2 font-semibold">Modern Compact Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="almirah3.jpg" alt="Almirah Design 3">
+        <p class="mt-2 font-semibold">Elegant Designer Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Trending-small-almirah-designs-1.png" alt="Trending Almirah 1">
+        <p class="mt-2 font-semibold">Trending Wooden Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Trending-small-almirah-designs-7.png" alt="Trending Almirah 2">
+        <p class="mt-2 font-semibold">Smart Modern Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="Wall-almirah-design-1.jpg" alt="Wall Almirah">
+        <p class="mt-2 font-semibold">Wall Mounted Almirah</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="sliding-bedroom-almirah.jpg" alt="Sliding Almirah">
+        <p class="mt-2 font-semibold">Sliding Door Almirah</p>
+      </div>
+
+      <!-- Others -->
+      <div class="gallery-item">
+        <img src="product-jpeg-500x500.jpg" alt="Premium Product">
+        <p class="mt-2 font-semibold">Premium Crafted Furniture</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="afee4bc039daa07b0235e955c02b152c.jpg" alt="Designer Furniture">
+        <p class="mt-2 font-semibold">Designer Furniture Piece</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-7xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+        <ul class="space-y-3 text-gray-300">
+          <li>📍 Location: Bithu Furniture House</li>
+          <li>📞 Phone: <a href="tel:+918238736573" class="text-yellow-400 font-bold">+91 82387 36573</a></li>
+          <li>📱 WhatsApp: <a href="https://wa.me/918238736573" class="text-green-400 font-bold">Chat on WhatsApp</a></li>
+          <li>📧 Email: <a href="mailto:info@karni-furniture.com" class="text-blue-400 font-bold">info@karni-furniture.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+        <div class="flex gap-6 text-2xl">
+          <a href="https://www.facebook.com/harisingh.bithu" target="_blank" class="hover:text-blue-500">🌐 Facebook</a>
+          <a href="https://www.instagram.com/harisinthal" target="_blank" class="hover:text-pink-500">📸 Instagram</a>
         </div>
       </div>
-      <div class="hero-right">
-        <img src="hero-furniture.jpg" alt="Karni Furniture Showcase">
-      </div>
-    </div>
-  </section>
 
-  <!-- Gallery Section -->
-  <section class="section soft" id="gallery">
-    <div class="wrap">
-      <h2>Our Furniture Collection</h2>
-      <div class="gallery-grid">
-
-        <figure class="card">
-          <img src="sofa1.jpg" alt="Sofa Design 1">
-          <figcaption>Premium Sofa • Elegant comfort with timeless style</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="sofa2.jpg" alt="Sofa Design 2">
-          <figcaption>Family Sofa • Cozy, durable & perfect for gatherings</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="bed1.jpg" alt="Bed Design 1">
-          <figcaption>King Size Bed • Luxury finish with modern touch</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="almirah1.jpg" alt="Wardrobe Design 1">
-          <figcaption>Wardrobe • Spacious, smart & functional storage</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="sliding-bedroom-almirah.jpg" alt="Sliding Almirah">
-          <figcaption>Sliding Door Almirah • Sleek & space-saving design</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="Trending-small-almirah-designs-1.png" alt="Trending Almirah">
-          <figcaption>Trending Almirah • Compact yet stylish furniture piece</figcaption>
-        </figure>
-
-        <figure class="card">
-          <img src="Wall-almirah-design-1.jpg" alt="Wall Almirah">
-          <figcaption>Wall Almirah • Built-in elegance for modern interiors</figcaption>
-        </figure>
-
-        <!-- Baaki images yahi format me add karne hain -->
-        
-      </div>
-    </div>
-  </section>
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="wrap about-grid">
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>At <strong>Karni Furniture</strong>, we believe that furniture is not just about 
-        utility, but about bringing beauty, elegance, and comfort into your home. 
-        With years of expertise in premium wood crafting, we deliver designs 
-        that stand the test of time.</p>
-        <ul>
-          <li>✔ Premium Quality Woodwork</li>
-          <li>✔ Custom Designs as per your need</li>
-          <li>✔ Durable & Long-lasting Finishing</li>
-          <li>✔ Elegant, Trend-setting Designs</li>
-        </ul>
-      </div>
-      <div class="about-img">
-        <img src="about-furniture.jpg" alt="About Karni Furniture" style="width:100%;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,0.5);">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section soft" id="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <h2>Contact Us</h2>
-        <ul class="contact-list">
-          <li><strong>Phone/WhatsApp:</strong> <a href="tel:8238736573">82387 36573</a></li>
-          <li><strong>Email:</strong> <a href="mailto:info@karnifurniture.com">info@karnifurniture.com</a></li>
-          <li><strong>Address:</strong> Sinthal, Bikaner, Rajasthan, India</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Follow Us</h2>
-        <ul class="contact-list">
-          <li><a href="https://www.facebook.com/harisingh.bithu" target="_blank">🌐 Facebook</a></li>
-          <li><a href="https://www.instagram.com/harisinthal?igsh=OGxvOXpiNmMxdG45" target="_blank">📷 Instagram</a></li>
-        </ul>
-      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="wrap">
-      <p>&copy; <span id="year"></span> Karni Furniture. All Rights Reserved.</p>
-      <p class="muted">Crafted with ❤️ in Bikaner</p>
-    </div>
+  <footer class="text-center py-6 border-t border-gray-800 mt-10">
+    <p>&copy; <span id="year"></span> Karni Furniture. All rights reserved.</p>
+    <p class="text-gray-400 text-sm">Crafted with ❤️ by Bithubrother</p>
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <script>
+    // Auto Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    // Lightbox for gallery images
+    const galleryImages = document.querySelectorAll(".gallery-grid img");
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        const lightbox = document.createElement("div");
+        lightbox.id = "lightbox";
+        lightbox.style.position = "fixed";
+        lightbox.style.inset = "0";
+        lightbox.style.background = "rgba(0,0,0,0.9)";
+        lightbox.style.display = "flex";
+        lightbox.style.alignItems = "center";
+        lightbox.style.justifyContent = "center";
+        lightbox.style.zIndex = "1000";
+
+        const fullImg = document.createElement("img");
+        fullImg.src = img.src;
+        fullImg.style.maxWidth = "90%";
+        fullImg.style.maxHeight = "90%";
+        fullImg.style.borderRadius = "12px";
+
+        lightbox.appendChild(fullImg);
+        lightbox.addEventListener("click", () => lightbox.remove());
+        document.body.appendChild(lightbox);
+      });
+    });
+  </script>
+
 </body>
 </html>
